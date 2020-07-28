@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <script type="text/babel">
+        
+        //Modelo do objeto/entidade
+        class contaBancaria{
+            //agencia / numeroConta / saldo / limite
+            constructor(){
+                this.agencia = 1075; 
+                this.numeroConta = 8351125; 
+                this.saldo = 50; 
+                this.limite = 450; 
+            }
+
+            depositar(valorDeposito){
+                this.saldo += valorDeposito; 
+            }
+
+            sacar(valorSaque){
+                this.saldo -= valorSaque; 
+            }
+
+            consultarSaldo(){
+                return this.saldo;
+            }
+        }
+
+        //instancia gera um objeto;
+        let contaBancaria1 = new contaBancaria();
+        let contaBancaria2 = new contaBancaria();
+
+        console.log(contaBancaria1.consultarSaldo());
+        contaBancaria1.depositar(450);
+        console.log(contaBancaria1.consultarSaldo());
+        contaBancaria1.sacar(200);
+        console.log(contaBancaria1.consultarSaldo());
+
+        console.log(contaBancaria2.consultarSaldo());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

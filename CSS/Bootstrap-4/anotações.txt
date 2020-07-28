@@ -1,0 +1,166 @@
+//introdução
+Aprender a criar sites responsivos e criar dois projetos 
+responsivos com sistemas de grid. O site se ajusta para 
+os diferentes tipos de tela. Recriar a página principal 
+do spotify. Vamos configurar um slide. Vamos criar barras
+de navegação e rodapés. 
+
+//aula 2
+layout fluido é diferente de um layout responsivo. Layout 
+fluido utilizam para a configuração das medidas valores em 
+porcentagem. E conforme é reduzido o tamanho da tela o layout
+vai se adaptando a novos tamanhos de tela. Se definirmos uma 
+área com tamnho de 70%, essa área vai ocupar 70% independente
+da área que ele está ocupando. Fluido é o mesmo que liquido.
+
+layout responsivo: responde aos diferentes tamanhos de tela. 
+Dessa forma, o layout responsivo pode sofrer alterações a 
+depender do tamanho da tela. A tela não fica se adapatando,
+mas há um controle do que é exibido para o usuário a depender
+do dispositivo. 
+
+Mobile first: começar desenvolvendo para mobile e depois ir 
+adapatando para outros tamnhos de tela. Podemos ocultar seções
+e exibir a partir de um botão. 
+
+em layouts fluidos definimos uma largura máxima. 
+
+site: mediaqueries.es
+
+layout adaptivo: cria vários padrões de site para os diferentes
+tipos de tela. Haveria várias versões do mesmo sistema. 
+
+Bootstrap é um framework para criação de sites responsivos. e
+usa o conceito de mobile first. É possível customizar o Bootstrap
+o site de nasa utiliza o framework bootstrap. 
+
+//Aula 3
+
+Estudar os exemplos do site bootstrap. 
+viewport é toda a área da interface do site.
+
+shrink-to-fit=no : encolher para caber, faz o conteudo escolher
+caso ultrapasse o viewport.
+
+//Aula 4
+
+vamos usar o bootstrap.css, pois ele é o principal. O arquivo
+bootstrap.min.css é o mesmo que o bootstrap, mas sem os espa-
+çamentos, por causa disso o arquivo tem carregamento mais rá-
+pidos. 
+
+//Aula 5 formatão de textos 
+os cabeçalhos ja vem com formatações padrões, mas a classes
+h1, h2, h3, h4, h5 e h6 que podem ser aplicadas para mudar essas
+configurações. 
+
+
+classes de display dão um maior destaque aos textos :
+    display-1, display-2, display-3, display-4
+
+A class .lead pode ser usada para da destaque aos paragrafos, 
+aumentando a letra e o espçamento entre as linhas.
+
+podemos configurar as fontes como monospace, dessa forma, cada
+letra vai ocupar a mesma largura. Usa a classe .text-monospace
+
+temos também classes para deixar o texto em negrito, italico
+ou normal: 
+    .font-weight-bold
+    .font-weight-normal
+    .font-italic
+
+Há classes para deixar o texto maiusculo, apenas a primeira letra
+maiúscula e tbm deixar as letras minusculas. 
+    .text-upercase
+    .text-lowercase
+    .text-capitalize - torna a primeira letra de cada palavra
+    maiuscula. 
+
+Há classes para alinhar textos: 
+    .text-right
+    .text-left
+    .text-center
+
+Classe para dar destaque a citação: .blockquote
+    .blockquote-footer aplica um estilo ao nome a qual a citaçãos
+    se refere.
+
+.text-truncate é uma classe serve para não exibir um paragrafos
+ou texto completo. Dessa forma, corta o texto e adiciona os ...
+podemos programar para quando clicar no texto exibir o texto completo.
+Podemos usar tooltips tbm. 
+
+.list-unstyled - serve para exibir uma lista sem nenhum estilo
+
+.list-inline deve ser aplicado na ul para deixar a lista inline
+.list-inline-item - deve ser aplicado na li para dizer que os 
+item da ul sao inline. 
+
+
+//Aula 5
+.text-justify - justifica um texto. 
+
+xg -> extra large divices >= 1200 px
+lg -> large >= 992px
+md -> medium >= 768px
+sm -> small >= 576px
+
+podemos definir alinhamentos a depender do tamanho da tela.
+Para fazer isso utilizamos as seguintes classes: 
+
+.text-xg-justify; 
+.text-lg-justify; 
+.text-md-center; 
+.text-sm-right; 
+
+Há formas de saber o tamanho da tela e tomar decisões a
+partir disso. 
+
+O padrão de alinhamento é a esquerda.
+
+Também há classes do bootstrap para converter elementos de 
+bloco para inline e vice-versa. Usa a classe d-inline para
+transformar em inline. d-block transforma um elemento em 
+tipo block.
+
+podemos transformar o elemento também em inline-block.
+.d-inline-block
+
+O elemento inline tem um comportamento que faz todo o conteúdo
+ficar em linha e caso não caiba em uma linha o conteúdo irá pular
+para a próxima. O elemento inline não aumenta de tamanho, ele
+vai ocupar o espaço do seu conteúdo. No elemento inline não 
+conseguimos aplicar padding e margin superior e enferior. 
+
+//Aula 6 - elementos flutuantes
+
+Quando utilizamos elementos flutuantes eles saem do fluxo normal
+do conteúdo da aplicação. e caso estejam dentro de uma div, essa
+div não vai ter uma altura definida. 
+
+para corrigir isso utilizamos a class .clearfix. 
+
+.float-right - flutua a direita.
+.float-left - flutua a esquerda. 
+.float-none - faz o elemento não flutuar.
+
+podemos fixar um conteudo do topo ou na parte inferior
+
+.fixed-top
+.fixed-bottom
+
+o float também pode ser responsivo. Para isso utilizamos as seguintes
+classes: 
+    .float-sm-right
+    .float-md-right
+    .floar-lg-right
+    .floar-xl-right
+
+podemos flutuar elementos com base no tamanho da tela.
+
+.sticky-top - quando o conteudo vai rolando e o elemento que
+tem essa classe chega no top ele fica colado no topo enquanto
+o resto do conteudo desce. N'ao h[a o sticky bottom.
+
+

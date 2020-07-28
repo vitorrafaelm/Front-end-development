@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <script type="text/babel">
+       /*let quadrado = function(x = 5){
+           return Math.pow(x, x);
+       }
+
+       let quadrado = (x = 9) => Math.pow(x, 2);
+
+       document.write(quadrado(undefined));*/
+
+       let parOuImpar = (numero) => {
+           var result = numero % 2 == 0 ?
+                'Par' : 'Impar';
+            return(result);
+       }
+
+       document.write(parOuImpar(7));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

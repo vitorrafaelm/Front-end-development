@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <script type="text/babel">
+        //Destructuring Objects
+        
+        //Composição de objetos
+        let produto = {
+            descricao: 'Notebook',
+            preco: 2000, 
+            detalhes: {
+                fabricante: 'abc', 
+                Modelo: 'xyz',
+            }
+        }
+
+        //let { descricao, preco } = produto; 
+
+        let { descricao: a, preco: b } = produto; 
+        let { detalhes: { fabricante, Modelo }} = produto; 
+        console.log(fabricante, Modelo);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <script type="text/babel">
+        
+        let pessoa = {
+            name: 'Maria',
+            idade: 25
+        }
+
+        console.log(pessoa);
+        //Incusão de novo atributo ao objeto: par, nome valor
+
+        pessoa.sexo = 'Feminino';
+        console.log(pessoa);
+
+        pessoa.dizerOi = () => console.log('Olá, tudo bem?');
+
+        pessoa.dizerOi();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

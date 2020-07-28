@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <script type="text/babel">
+        let nome = 'Jorge'; 
+        let idade = 23; 
+        let sexo = 'Masculino'; 
+        let profissao = 'Programador';
+
+        let objeto = {
+            nome,
+            idade, 
+            sexo, 
+            profissao, 
+            exibirResumo: () => {
+                console.log(`${nome}, ${idade}, 
+                ${sexo} é ${profissao}.`);
+            }
+        }
+
+        console.log(objeto);
+        objeto.exibirResumo();
+
+        //Melhoria de funções para a definição de objetos literais
+
+        let objeto2 = {
+            nome,
+            idade, 
+            sexo, 
+            profissao,
+            exibirResumo() {
+                console.log(`${nome}, ${idade}, 
+                ${sexo} é ${profissao}.`);
+            }
+        }
+
+        objeto2.exibirResumo();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

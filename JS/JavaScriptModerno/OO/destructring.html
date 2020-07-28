@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <script type="text/babel">
+        //Destructuring
+
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão'];
+
+        let [a, ...b] = frutas; 
+
+        console.log(a, b);
+
+        //Desestruturando informações de arrays multidimensionais.
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'],
+            ['Jose', 'Maria']]; 
+        
+        let [[, , pera ], [, n2]] = coisas; 
+
+        console.log(pera);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

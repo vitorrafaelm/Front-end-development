@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+
+    <script type="text/babel">
+        
+        Object.prototype.attr50 = 'Z';
+        //Todos são filgos de object prototype
+        let animal = {att1: 'a'}
+        let vertebrado = {__proto__: animal, att2: 'b'}
+        let ave = { __proto__: vertebrado, att3: 'c'}
+        
+        console.log(animal); 
+        console.log(vertebrado); 
+        console.log(ave); 
+
+        console.log(ave.att2, ave.att1, ave.attr50);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

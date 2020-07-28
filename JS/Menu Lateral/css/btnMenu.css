@@ -1,0 +1,13 @@
+.btnMenu{
+    display: block;
+    padding: 20px 15px;  
+}
+
+.btnMenu_open{
+    color: #747c74;
+}
+
+.btnMenu_close{
+    background-color: #747c74;
+    color: white;
+}
